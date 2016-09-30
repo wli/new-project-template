@@ -1,3 +1,7 @@
+/**
+ * @flow
+ */
+
 import Exponent from 'exponent';
 import React from 'react';
 import {
@@ -34,6 +38,7 @@ class AppContainer extends React.Component {
           require('./assets/images/exponent-wordmark.png'),
         ],
         fonts: [
+          // $FlowFixMe: suppressing this error until RelativeFontStub exists
           {'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf')},
         ],
       });
